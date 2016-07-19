@@ -1,10 +1,10 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+sites/default/settings.php
+autoload.php
 
 # Ignore paths that contain generated content.
 files/
-sites/*/files
-sites/*/private
+# sites/default/files
 
 # Ignore default text files
 robots.txt
@@ -28,9 +28,21 @@ index.php
 install.php
 update.php
 xmlrpc.php
-/includes
-/misc
-/modules
+/core/*
 /profiles
-/scripts
-/themes
+/vendor/*
+
+# Ignore 
+.csslintrc
+.editorconfig
+.eslintignore
+.eslintrc
+.gitattributes
+example.gitignore
+composer.json
+composer.lock
+
+# Ignore ecliplse files & directories
+.buildpath
+.project
+.settings*
