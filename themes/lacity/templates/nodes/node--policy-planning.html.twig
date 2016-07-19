@@ -1,0 +1,22 @@
+       <div class="col-md-12">
+
+          <div class="row">
+            <div style="background-color:#BD4B26; color:white;" class="col-md-12">
+              <h2 class="text-center">
+              {{ label }}
+              </h2>
+            </div>
+          </div>
+
+          <div style="margin-top:30px;" class="row">
+            <div style="font-size:1.2em; font-weight:600;" class="col-md-12">
+	            {{ content.body }}
+	            <br>
+	            {% if content.field_doc|render  %}
+	             	{{ content.field_doc }}
+	            {% endif %}
+            </div>
+          </div>
+
+        </div>
+

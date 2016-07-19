@@ -1,0 +1,64 @@
+<div class="container-fluid">
+	<div class="row">
+		<img style="height: auto; width: 100%;"
+			src="{{ directory }}/Lastrip.jpg">
+		<div class="col-md-12"></div>
+	</div>
+	<div style="background-color: #0e283f;" class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-inverse navbar-static">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="{{ base_path }}"> <img style="height: auto; width: 100%; margin-top: -6px;" src="{{ directory }}/images/ladcpsmall.jpg"></a>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+
+				<div class="collapse navbar-collapse js-navbar-collapse">
+					{% include directory ~ '/partials/menu.html.twig' %}
+
+					<ul class="nav navbar-nav navbar-right">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control"
+									placeholder="Search Cases" />
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</ul>
+				</div> <!-- /.nav-collapse -->
+			</nav>
+
+		</div>
+	</div>
+
+	<div style="margin-top: 1px;" class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">{{ page.slider }}</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">{{ page.content }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- // Footer start -->
+	{% include directory ~ '/partials/footer.html.twig'  %}
+	<!-- // End Footer start -->
+</div>

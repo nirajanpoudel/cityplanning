@@ -1,0 +1,25 @@
+<?php
+
+function lacity_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {  
+	  if (isset($form_id)) {
+	    return;
+	  }
+
+	  $form['footer_message'] = array(
+	    '#type'          => 'textfield',
+	    '#title'         => t('Footer Message'),
+	    '#default_value' => theme_get_setting('footer_message'),
+	    '#description'   => t("Place Copy Right Message Here."),
+	  );
+}
+
+function lacity_preprocess_page(&$variables) {
+	// kint($variables['page']['primary_menu']['lacity_main_menu']);
+  $variables['footer_message'] = theme_get_setting('footer_message','lacity');
+}
+
+//template suggestion for container part
+function lacity_theme_suggestions_container_alter(&$suggestions, $vars, $hook) {
+	
+	$suggestions[] = 'container' . '__'.'custom';  
+}

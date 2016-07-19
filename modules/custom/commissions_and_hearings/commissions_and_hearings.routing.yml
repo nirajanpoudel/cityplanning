@@ -1,0 +1,7 @@
+hearing.content:
+  path: '/commissions'
+  defaults:
+    _controller: '\Drupal\commissions_and_hearings\Controller\HearingController::content'
+    _title: 'Hearing commissions'
+  requirements:
+    _permission: 'access content'

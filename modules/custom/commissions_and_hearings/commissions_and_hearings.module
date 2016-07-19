@@ -1,0 +1,14 @@
+<?php
+function commissions_and_hearings_theme($existing, $type, $theme, $path) {
+	// kint($theme);
+  return array('commissions_and_hearings' =>
+    array(
+      'variables' => array(
+        'title' => 'Default title', 
+        'description' => 'place content goes here',
+        'var1'=>'This is var one'
+      ),
+      'template' => 'block--sampleblock'
+    )
+  );
+}
