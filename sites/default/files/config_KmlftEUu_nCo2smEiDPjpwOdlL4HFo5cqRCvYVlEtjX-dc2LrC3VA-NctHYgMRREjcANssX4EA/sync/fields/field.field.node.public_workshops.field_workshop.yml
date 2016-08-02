@@ -1,0 +1,21 @@
+uuid: 0b72fca9-7ab9-40ef-a1b2-8f432d67eaea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workshop
+    - node.type.public_workshops
+  module:
+    - text
+id: node.public_workshops.field_workshop
+field_name: field_workshop
+entity_type: node
+bundle: public_workshops
+label: Workshop
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 3e1cfb49-9068-4919-8eb5-94d48a810aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.commissions_hearning_commissione
+  module:
+    - text
+id: node.commissions_hearning_commissione.body
+field_name: body
+entity_type: node
+bundle: commissions_hearning_commissione
+label: Biography
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,9 @@
+uuid: ec292cb1-ebb4-4193-8fe3-17d02cc4ef6c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Meeting & Hearing Notes'
+vid: meeting_hearing_note
+description: ''
+hierarchy: 0
+weight: 0

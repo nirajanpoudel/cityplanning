@@ -1,0 +1,92 @@
+uuid: 02610a8d-f268-407c-b2f4-b7458a23193f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hearing_notices.body
+    - field.field.node.hearing_notices.field_address
+    - field.field.node.hearing_notices.field_case_number
+    - field.field.node.hearing_notices.field_cd
+    - field.field.node.hearing_notices.field_citywide
+    - field.field.node.hearing_notices.field_date
+    - field.field.node.hearing_notices.field_document
+    - field.field.node.hearing_notices.field_note
+    - field.field.node.hearing_notices.field_type
+    - node.type.hearing_notices
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.hearing_notices.default
+targetEntityType: node
+bundle: hearing_notices
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 107
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_case_number:
+    weight: 105
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_cd:
+    weight: 108
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_citywide:
+    weight: 104
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_date:
+    weight: 102
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+  field_document:
+    weight: 109
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_note:
+    weight: 106
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type:
+    weight: 103
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

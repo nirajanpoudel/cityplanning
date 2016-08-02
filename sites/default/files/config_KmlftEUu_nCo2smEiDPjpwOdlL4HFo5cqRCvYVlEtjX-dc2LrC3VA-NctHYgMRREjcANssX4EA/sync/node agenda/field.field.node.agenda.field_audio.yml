@@ -1,0 +1,27 @@
+uuid: a7bbd303-ac80-4815-ab72-a04dc9fb048e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio
+    - node.type.agenda
+  module:
+    - file
+id: node.agenda.field_audio
+field_name: field_audio
+entity_type: node
+bundle: agenda
+label: Audio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'commissions-hearings/audio/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '20 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

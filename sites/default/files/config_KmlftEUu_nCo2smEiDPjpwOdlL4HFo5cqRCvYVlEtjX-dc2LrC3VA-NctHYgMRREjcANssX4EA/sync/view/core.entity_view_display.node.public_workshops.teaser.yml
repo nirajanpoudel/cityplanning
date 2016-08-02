@@ -1,0 +1,38 @@
+uuid: 8cee4aa6-c995-4c8b-99c7-f9f9af6388e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.public_workshops.body
+    - field.field.node.public_workshops.field_address
+    - field.field.node.public_workshops.field_case_number
+    - field.field.node.public_workshops.field_citywide
+    - field.field.node.public_workshops.field_date
+    - field.field.node.public_workshops.field_time
+    - field.field.node.public_workshops.field_workshop
+    - node.type.public_workshops
+  module:
+    - text
+    - user
+id: node.public_workshops.teaser
+targetEntityType: node
+bundle: public_workshops
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_address: true
+  field_case_number: true
+  field_citywide: true
+  field_date: true
+  field_time: true
+  field_workshop: true

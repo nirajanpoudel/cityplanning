@@ -1,0 +1,32 @@
+uuid: d807997a-5cf0-4026-be0f-a3b6d99975d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_type
+    - node.type.policy_planning
+    - taxonomy.vocabulary.policy_planning
+  content:
+    - 'taxonomy_term:policy_planning:cdf5d6a5-3ee3-47ad-9980-0e7a579abbf8'
+id: node.policy_planning.field_content_type
+field_name: field_content_type
+entity_type: node
+bundle: policy_planning
+label: 'Content Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: cdf5d6a5-3ee3-47ad-9980-0e7a579abbf8
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      policy_planning: policy_planning
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: b48b9d1d-90e5-43a6-a79b-54e8b5066604
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.document
+  module:
+    - file
+id: node.document.field_document
+field_name: field_document
+entity_type: node
+bundle: document
+label: Document
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '30 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

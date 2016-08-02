@@ -1,0 +1,22 @@
+uuid: fb327d43-4b7d-4239-868d-5acffbde60b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.public_workshops
+  module:
+    - text
+id: node.public_workshops.body
+field_name: body
+entity_type: node
+bundle: public_workshops
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: 367568b3-adad-4705-831c-6daefd101be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.agenda
+    - taxonomy.vocabulary.meeting_hearing_section
+id: node.agenda.field_type
+field_name: field_type
+entity_type: node
+bundle: agenda
+label: Type
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      meeting_hearing_section: meeting_hearing_section
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

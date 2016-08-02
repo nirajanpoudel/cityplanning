@@ -1,0 +1,21 @@
+uuid: 9a0a9b6c-b4f0-4a8d-9f82-8d4726243e5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_id
+    - node.type.commissions_hearning_commissione
+id: node.commissions_hearning_commissione.field_twitter_id
+field_name: field_twitter_id
+entity_type: node
+bundle: commissions_hearning_commissione
+label: Twitter
+description: 'Eg: @sdothumble'
+required: false
+translatable: false
+default_value:
+  -
+    value: '@yourId'
+default_value_callback: ''
+settings: {  }
+field_type: string

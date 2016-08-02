@@ -1,0 +1,9 @@
+uuid: 2169d286-bc7d-47a0-a5cf-c4d91ba641a7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Meeting & Hearing Type'
+vid: meeting_hearing_type
+description: 'Use tags to group articles on similar topics into <i>Meeting & Hearing</i>categories.'
+hierarchy: 0
+weight: 0

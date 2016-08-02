@@ -1,0 +1,24 @@
+uuid: 19d356ae-fadb-44f5-969c-7815540c3f56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.public_workshops
+  module:
+    - datetime
+id: node.public_workshops.field_date
+field_name: field_date
+entity_type: node
+bundle: public_workshops
+label: Date
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

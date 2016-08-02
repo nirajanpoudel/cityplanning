@@ -1,0 +1,19 @@
+uuid: 24bd4398-75c2-4dc0-8728-d6deeaf027b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_number
+    - node.type.hearing_notices
+id: node.hearing_notices.field_case_number
+field_name: field_case_number
+entity_type: node
+bundle: hearing_notices
+label: 'Case Number'
+description: 'Eg.<em>ZA 2015-4240-CUB</em>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

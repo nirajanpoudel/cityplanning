@@ -1,0 +1,19 @@
+uuid: 7a6ae4ca-da3a-4fcd-ad0f-fb2dd911dc5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time
+    - node.type.public_workshops
+id: node.public_workshops.field_time
+field_name: field_time
+entity_type: node
+bundle: public_workshops
+label: Time
+description: '<em>10:30 - 14:00</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

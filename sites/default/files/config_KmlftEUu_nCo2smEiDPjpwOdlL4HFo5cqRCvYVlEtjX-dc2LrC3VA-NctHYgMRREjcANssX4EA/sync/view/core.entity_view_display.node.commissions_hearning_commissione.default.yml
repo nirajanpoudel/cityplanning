@@ -1,0 +1,93 @@
+uuid: 1bca471e-e89b-4ecf-a1ea-88cc03fee4ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.commissions_hearning_commissione.body
+    - field.field.node.commissions_hearning_commissione.field_citywide
+    - field.field.node.commissions_hearning_commissione.field_facebook_id
+    - field.field.node.commissions_hearning_commissione.field_image
+    - field.field.node.commissions_hearning_commissione.field_last_name
+    - field.field.node.commissions_hearning_commissione.field_linkedin
+    - field.field.node.commissions_hearning_commissione.field_listing_order
+    - field.field.node.commissions_hearning_commissione.field_position
+    - field.field.node.commissions_hearning_commissione.field_twitter_id
+    - node.type.commissions_hearning_commissione
+  module:
+    - image
+    - text
+    - user
+id: node.commissions_hearning_commissione.default
+targetEntityType: node
+bundle: commissions_hearning_commissione
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_citywide:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_facebook_id:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_last_name:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_linkedin:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_listing_order:
+    weight: 9
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_position:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_twitter_id:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

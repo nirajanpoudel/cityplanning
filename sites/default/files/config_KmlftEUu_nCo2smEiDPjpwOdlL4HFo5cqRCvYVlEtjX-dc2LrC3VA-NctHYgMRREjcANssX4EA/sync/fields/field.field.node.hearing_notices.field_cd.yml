@@ -1,0 +1,23 @@
+uuid: 4e97c848-9b52-4f7c-99e9-7de4302b2271
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cd
+    - node.type.hearing_notices
+id: node.hearing_notices.field_cd
+field_name: field_cd
+entity_type: node
+bundle: hearing_notices
+label: CD
+description: '<em>Eg: 5</em>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,9 @@
+uuid: e660535b-a10a-4590-a9c5-9ec1fab7d638
+langcode: en
+status: true
+dependencies: {  }
+name: Citywide
+vid: citywide
+description: 'Manage <i>Citywide</i>'
+hierarchy: 0
+weight: 0

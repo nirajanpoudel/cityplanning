@@ -1,0 +1,22 @@
+uuid: 3b4a82fc-4e3e-4f03-9da3-de5a7564c0c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.front_slider
+  module:
+    - text
+id: node.front_slider.body
+field_name: body
+entity_type: node
+bundle: front_slider
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,27 @@
+uuid: 8caeb36f-68f8-4ae9-8d8f-2b671ff6ba75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.hearing_notices
+  module:
+    - file
+id: node.hearing_notices.field_document
+field_name: field_document
+entity_type: node
+bundle: hearing_notices
+label: Hearing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'commissions-hearings/hearing/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

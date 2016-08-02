@@ -1,0 +1,92 @@
+uuid: 95b84611-1db1-4256-b421-a4eca0cf092a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_address
+    - field.field.node.agenda.field_agenda
+    - field.field.node.agenda.field_audio
+    - field.field.node.agenda.field_board_name
+    - field.field.node.agenda.field_citywide
+    - field.field.node.agenda.field_date
+    - field.field.node.agenda.field_minutes
+    - field.field.node.agenda.field_note
+    - field.field.node.agenda.field_type
+    - node.type.agenda
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  field_address:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_agenda:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_audio:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_board_name:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_citywide:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_minutes:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_note:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_type:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

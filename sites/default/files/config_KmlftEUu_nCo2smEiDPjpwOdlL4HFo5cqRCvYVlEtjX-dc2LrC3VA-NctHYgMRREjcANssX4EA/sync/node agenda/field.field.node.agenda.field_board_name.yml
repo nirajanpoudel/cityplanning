@@ -1,0 +1,19 @@
+uuid: 833d37a0-b38e-465c-825b-9b13977d51fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_board_name
+    - node.type.agenda
+id: node.agenda.field_board_name
+field_name: field_board_name
+entity_type: node
+bundle: agenda
+label: 'Board Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

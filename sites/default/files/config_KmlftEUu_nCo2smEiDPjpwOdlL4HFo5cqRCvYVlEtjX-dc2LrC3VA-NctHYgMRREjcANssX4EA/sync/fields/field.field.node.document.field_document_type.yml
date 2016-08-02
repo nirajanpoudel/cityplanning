@@ -1,0 +1,28 @@
+uuid: b91005d1-f478-43f7-84b9-e407101e40c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_type
+    - node.type.document
+id: node.document.field_document_type
+field_name: field_document_type
+entity_type: node
+bundle: document
+label: 'Document Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: fafb5b1d-97d2-49fc-b3a9-8b3ed5978d01
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

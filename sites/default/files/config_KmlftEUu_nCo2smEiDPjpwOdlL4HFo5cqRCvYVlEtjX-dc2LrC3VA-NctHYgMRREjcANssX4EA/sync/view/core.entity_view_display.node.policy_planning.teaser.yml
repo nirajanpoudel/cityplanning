@@ -1,0 +1,30 @@
+uuid: c3b9485a-a39e-4223-8c5a-28be40f2b100
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.policy_planning.body
+    - field.field.node.policy_planning.field_content_type
+    - field.field.node.policy_planning.field_doc
+    - node.type.policy_planning
+  module:
+    - text
+    - user
+id: node.policy_planning.teaser
+targetEntityType: node
+bundle: policy_planning
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_content_type: true
+  field_doc: true

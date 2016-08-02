@@ -1,0 +1,32 @@
+uuid: 5d89eede-2bbd-41fc-9f49-5f3ea1e028ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_citywide
+    - node.type.hearing_notices
+    - taxonomy.vocabulary.citywide
+  content:
+    - 'taxonomy_term:citywide:f59668a9-4271-4e71-b167-f95200fa502a'
+id: node.hearing_notices.field_citywide
+field_name: field_citywide
+entity_type: node
+bundle: hearing_notices
+label: Citywide
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: f59668a9-4271-4e71-b167-f95200fa502a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      citywide: citywide
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

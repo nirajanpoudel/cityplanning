@@ -1,0 +1,21 @@
+uuid: 70db1dd6-36dd-41c2-a5e4-3c9301bf3fa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.agenda
+  module:
+    - text
+id: node.agenda.field_address
+field_name: field_address
+entity_type: node
+bundle: agenda
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

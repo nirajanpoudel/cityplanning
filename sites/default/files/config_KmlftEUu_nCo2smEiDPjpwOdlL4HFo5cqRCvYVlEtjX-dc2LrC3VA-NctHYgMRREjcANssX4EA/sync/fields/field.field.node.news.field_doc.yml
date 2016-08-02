@@ -1,0 +1,27 @@
+uuid: 028dafca-8328-44d8-a016-abe0b33a841d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc
+    - node.type.news
+  module:
+    - file
+id: node.news.field_doc
+field_name: field_doc
+entity_type: node
+bundle: news
+label: Doc
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'news/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '30 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

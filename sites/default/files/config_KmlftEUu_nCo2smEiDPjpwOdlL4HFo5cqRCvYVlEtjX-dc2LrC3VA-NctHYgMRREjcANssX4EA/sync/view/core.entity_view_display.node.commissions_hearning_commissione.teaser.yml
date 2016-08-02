@@ -1,0 +1,42 @@
+uuid: df20998a-361e-4100-a72c-1e56a5e655fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.commissions_hearning_commissione.body
+    - field.field.node.commissions_hearning_commissione.field_citywide
+    - field.field.node.commissions_hearning_commissione.field_facebook_id
+    - field.field.node.commissions_hearning_commissione.field_image
+    - field.field.node.commissions_hearning_commissione.field_last_name
+    - field.field.node.commissions_hearning_commissione.field_linkedin
+    - field.field.node.commissions_hearning_commissione.field_listing_order
+    - field.field.node.commissions_hearning_commissione.field_position
+    - field.field.node.commissions_hearning_commissione.field_twitter_id
+    - node.type.commissions_hearning_commissione
+  module:
+    - text
+    - user
+id: node.commissions_hearning_commissione.teaser
+targetEntityType: node
+bundle: commissions_hearning_commissione
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_citywide: true
+  field_facebook_id: true
+  field_image: true
+  field_last_name: true
+  field_linkedin: true
+  field_listing_order: true
+  field_position: true
+  field_twitter_id: true

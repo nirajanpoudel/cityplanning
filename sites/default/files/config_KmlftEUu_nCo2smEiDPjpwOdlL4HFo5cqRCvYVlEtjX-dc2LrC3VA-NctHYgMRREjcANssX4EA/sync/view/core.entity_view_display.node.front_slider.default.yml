@@ -1,0 +1,33 @@
+uuid: a2432ef6-b3d9-42b0-9281-9862be896713
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_slider.body
+    - field.field.node.front_slider.field_image
+    - node.type.front_slider
+  module:
+    - image
+    - text
+    - user
+id: node.front_slider.default
+targetEntityType: node
+bundle: front_slider
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  links: true

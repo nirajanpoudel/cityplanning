@@ -1,0 +1,34 @@
+uuid: c6858f49-0b7c-4f88-a9f9-af83053df78b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.policy_planning.body
+    - field.field.node.policy_planning.field_content_type
+    - field.field.node.policy_planning.field_doc
+    - node.type.policy_planning
+  module:
+    - file
+    - text
+    - user
+id: node.policy_planning.default
+targetEntityType: node
+bundle: policy_planning
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_doc:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+hidden:
+  field_content_type: true
+  links: true

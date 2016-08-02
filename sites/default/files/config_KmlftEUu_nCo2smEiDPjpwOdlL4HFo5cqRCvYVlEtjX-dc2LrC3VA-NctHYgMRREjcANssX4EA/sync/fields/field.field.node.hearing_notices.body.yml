@@ -1,0 +1,22 @@
+uuid: 862d56af-8689-42b4-9c7f-838d81e40d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hearing_notices
+  module:
+    - text
+id: node.hearing_notices.body
+field_name: body
+entity_type: node
+bundle: hearing_notices
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

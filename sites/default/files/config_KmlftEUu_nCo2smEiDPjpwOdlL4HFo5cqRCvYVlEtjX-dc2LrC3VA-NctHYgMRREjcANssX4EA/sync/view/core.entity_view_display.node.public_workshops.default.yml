@@ -1,0 +1,74 @@
+uuid: 5179ac33-a278-4960-8b38-e6a0dd9428a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.public_workshops.body
+    - field.field.node.public_workshops.field_address
+    - field.field.node.public_workshops.field_case_number
+    - field.field.node.public_workshops.field_citywide
+    - field.field.node.public_workshops.field_date
+    - field.field.node.public_workshops.field_time
+    - field.field.node.public_workshops.field_workshop
+    - node.type.public_workshops
+  module:
+    - datetime
+    - text
+    - user
+id: node.public_workshops.default
+targetEntityType: node
+bundle: public_workshops
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_case_number:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_citywide:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_date:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+  field_time:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_workshop:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 19a132bf-410b-4998-975d-e91f959ddc78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.hearing_notices
+  module:
+    - text
+id: node.hearing_notices.field_address
+field_name: field_address
+entity_type: node
+bundle: hearing_notices
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

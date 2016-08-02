@@ -1,0 +1,27 @@
+uuid: cc8017aa-66c2-4e8d-87b3-3a33cca07510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc
+    - node.type.about
+  module:
+    - file
+id: node.about.field_doc
+field_name: field_doc
+entity_type: node
+bundle: about
+label: Doc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'about/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '30 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
