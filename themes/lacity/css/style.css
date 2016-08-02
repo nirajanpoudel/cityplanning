@@ -185,6 +185,11 @@ margin-top:5px;
     box-shadow:  5px 5px 3px #AAAAAA;
 }
 
+.upcomingMeetings ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#3b94d9;  }
+.upcomingMeetings ol li { }
+.upcomingMeetings ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:16px; color:#333333; border-left: 1px solid #999; margin:0px; }
+.upcomingMeetings ol li p em { display:block; }
+
 @media (max-width: 990px) {
 	.belowSliderBoxesUL {
 		margin-left:0px;
