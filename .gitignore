@@ -6,7 +6,7 @@ sites/all/themes/README.txt
 autoload.php
 
 # Ignore paths that contain generated content.
-# sites/default/files
+sites/default/files
 
 # Ignore default text files
 robots.txt
