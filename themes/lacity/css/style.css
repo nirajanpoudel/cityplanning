@@ -3,14 +3,14 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
 
 
-.navbar-inverse { background-color:#0e283f}
+.navbar-inverse { background-color:#22415c}
 .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #BD4B26}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color:#BD4B26; }
 .dropdown-menu { background-color: #002533;}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color:#ecf2f9;} }
 .navbar-inverse { background-image: none; }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
-.navbar-inverse { border-color:#0e283f}
+.navbar-inverse { border-color:#22415c}
 .navbar-inverse .navbar-brand { color: white}
 .navbar-inverse .navbar-brand:hover { color: white}
 .navbar-inverse .navbar-nav>li>a { color:whitesmoke}
@@ -144,8 +144,11 @@ margin-top:5px;
 	padding-bottom:10px;
 	text-align:right;
 }
+.searchBoxUL {
+	padding-left:0px;
+}
 .caseSearchTextBox {
-	background-color:#0e283f;
+	background-color:#22415c;
 	color:white;
 	outline:none;
 	border:none;
@@ -201,4 +204,23 @@ margin-top:5px;
 		display: inline;
 	}
 }
+
+//---------------------------------------
+// additional formatting for the top menu bar
+//----------------------------------------
+@media (min-width: 768px) {
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+}
+}
+@media (min-width: 1050px) { .navbar-nav { font-size:16px; } }
+@media (min-width: 1225px) { .navbar-nav { font-size:20px; } }
+@media (min-width: 1400px) { .navbar-nav { font-size:24px; } }
 

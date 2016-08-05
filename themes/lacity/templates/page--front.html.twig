@@ -1,10 +1,22 @@
 <div class="container-fluid">
-	<div class="row">
-		<img style="height: auto; width: 100%;"
-			src="{{ directory }}/Lastrip.jpg">
-		<div class="col-md-12"></div>
+	<div class="row"></div>
+	<div style="background-color: #22415c; padding-top:5px;" class="row">
+		<div class="col-md-6">
+		<img src="{{ directory }}/images/department_logo.png">
+		</div>
+		<div class="col-md-6">
+		<ul class="navbar-right searchBoxUL">
+			<div class="navbar-form navbar-left" role="search" onclick="toggleCaseSearch();" style="cursor:pointer;margin-top:29px;">
+				<div style="" class="divCaseSearch">
+					<span id="spanCaseSearch" style="">Case Search</span>
+					<input id="txtCaseSearch" class="caseSearchTextBox" type="text" style="display:none;" placeholder="Enter Case Number">							
+					<img src="{{ directory }}/images/search_icon.png" style="height:20px;margin-top:-4px; margin-left:20px;" alt="Search Icon">
+				</div>
+			</div>
+		</ul>
+		</div>
 	</div>
-	<div style="background-color: #0e283f;" class="row">
+	<div style="background-color: #22415c;" class="row">
 		<div class="col-md-12">
 			<nav class="navbar navbar-inverse navbar-static">
 				<div class="navbar-header">
@@ -14,24 +26,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="{{ base_path }}"> <img style="height: auto; width: 100%; margin-top: -6px;" src="{{ directory }}/images/ladcpsmall.jpg"></a>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</div>
 
-				<div class="collapse navbar-collapse js-navbar-collapse">
+				<div class="collapse navbar-collapse js-navbar-collapse" style='font-family: 'Alegreya Sans', sans-serif;'>
 					{% include directory ~ '/partials/menu.html.twig' %}
-
-					<ul class="nav navbar-nav navbar-right">
-						<div class="navbar-form navbar-left" role="search" onclick='toggleCaseSearch();' style='cursor:pointer;'>
-							<div style="" class='divCaseSearch'>
-								<span id='spanCaseSearch' style=''>Case Search</span>
-								<input id='txtCaseSearch' class='caseSearchTextBox' type="text" style='display:none;' placeholder="Enter Case Number"/>
-								<img src="{{ directory }}/images/search_icon.png" style="height:20px;margin-top:-4px; margin-left:20px;" alt="Search Icon">
-							</div>
-						</div>
-					</ul>
 				</div> <!-- /.nav-collapse -->
 			</nav>
 
@@ -118,7 +119,7 @@
 					<div style="box-shadow:  5px 5px 3px #AAAAAA;" class="col-md-4">
 						<div style="" class="text-center belowSliderBoxes">Upcoming Commission Meetings</div>
 						<div class="row" style=''>
-							<ol>
+							<ol type="I" style='margin-left:20px;'>
 							<li><p><em>July 19</em>City Planning Commission</p></li>
 							<li><p><em>July 19</em>South Los Angeles Area Planning Commission</p></li>
 							<li><p><em>July 20</em>West Los Angeles Area Planning Commission</p></li>
@@ -133,7 +134,7 @@
 					<div style="box-shadow:  5px 5px 3px #AAAAAA;" class="col-md-4">
 						<div style="" class="text-center belowSliderBoxes">What's New</div>
 						<div class="row" style='height:514px;'>
-							<ol>
+							<ol type="I" style='margin-left:20px;'>
 								<li><p><em>Newsletter</em>July Historic Preservation E-Newsletter</p></li>
 								<li><p><em>Ordinance</em>Proposed Revision to Baseline Mansionization / Baseline Hillside Ordinanace</p></li>
 								<li><p><em>Update</em>Small Lot Code Amendment and Policy Update</p></li>
