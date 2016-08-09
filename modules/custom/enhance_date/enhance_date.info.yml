@@ -1,0 +1,5 @@
+name: Enhance Date Filter
+description: Enhance Date Filter.
+package: views
+type: module
+core: 8.x
