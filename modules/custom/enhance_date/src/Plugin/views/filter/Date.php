@@ -57,7 +57,8 @@ class Date extends NumericFilter{
       $form['value']['value'] = array(
         '#type' => 'select',
         '#title' => !$exposed ? $this->t('Value') : '',
-        '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017']
+        '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017'],
+        '#default_value'=>[date('Y')=>date('Y')]
       );
       // Setup #states for all operators with one value.
       foreach ($this->operatorValues(1) as $operator) {
@@ -77,7 +78,7 @@ class Date extends NumericFilter{
         '#type' => 'select',
         '#title' => !$exposed ? $this->t('Value') : '',
         '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017','2018'=>'2018'],
-        
+        '#default_value'=>[date('Y')=>date('Y')]
       );
       if ($exposed && !isset($user_input[$identifier])) {
         $user_input[$identifier] = $this->value['value'];

@@ -83,3 +83,13 @@
 127.0.0.1 - - [08/Aug/2016:10:37:35 +0545] "GET /cityplanning/commissions-hearings/81/agenda/themes/lacity/images/social_drupal_2.png HTTP/1.1" 404 258
 127.0.0.1 - - [08/Aug/2016:10:37:34 +0545] "GET /cityplanning/commissions-hearings/81/agenda/themes/lacity/images/social_googleplus_2.png HTTP/1.1" 404 262
 127.0.0.1 - - [08/Aug/2016:10:37:34 +0545] "GET /cityplanning/commissions-hearings/81/agenda/themes/lacity/images/social_youtube_2.png HTTP/1.1" 500 -
+127.0.0.1 - - [09/Aug/2016:23:13:39 +0545] "GET / HTTP/1.1" 500 142
+127.0.0.1 - - [09/Aug/2016:23:13:36 +0545] "GET / HTTP/1.1" 500 142
+127.0.0.1 - - [09/Aug/2016:23:14:38 +0545] "GET /favicon.ico HTTP/1.1" 404 209
+127.0.0.1 - - [09/Aug/2016:23:14:43 +0545] "GET / HTTP/1.1" 500 142
+127.0.0.1 - - [09/Aug/2016:23:18:29 +0545] "GET / HTTP/1.1" 500 74
+127.0.0.1 - - [09/Aug/2016:23:19:20 +0545] "GET / HTTP/1.1" 500 74
+127.0.0.1 - - [09/Aug/2016:23:28:31 +0545] "GET / HTTP/1.1" 500 74
+127.0.0.1 - - [09/Aug/2016:23:29:27 +0545] "GET / HTTP/1.1" 500 74
+127.0.0.1 - - [09/Aug/2016:23:29:45 +0545] "GET / HTTP/1.1" 500 74
+127.0.0.1 - - [09/Aug/2016:23:30:20 +0545] "GET / HTTP/1.1" 500 74
