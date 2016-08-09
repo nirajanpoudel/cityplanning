@@ -28,65 +28,65 @@ class Date extends NumericFilter{
 		return $filter+$operators;
 	}
 
-	// protected function valueForm(&$form, FormStateInterface $form_state) {
- //    $form['value']['#tree'] = TRUE;
+	protected function valueForm(&$form, FormStateInterface $form_state) {
+    $form['value']['#tree'] = TRUE;
 
- //    // We have to make some choices when creating this as an exposed
- //    // filter form. For example, if the operator is locked and thus
- //    // not rendered, we can't render dependencies; instead we only
- //    // render the form items we need.
- //    $which = 'all';
- //    if (!empty($form['operator'])) {
- //      $source = ':input[name="options[operator]"]';
- //    }
+    // We have to make some choices when creating this as an exposed
+    // filter form. For example, if the operator is locked and thus
+    // not rendered, we can't render dependencies; instead we only
+    // render the form items we need.
+    $which = 'all';
+    if (!empty($form['operator'])) {
+      $source = ':input[name="options[operator]"]';
+    }
 
- //    if ($exposed = $form_state->get('exposed')) {
- //      $identifier = $this->options['expose']['identifier'];
+    if ($exposed = $form_state->get('exposed')) {
+      $identifier = $this->options['expose']['identifier'];
 
- //      if (empty($this->options['expose']['use_operator']) || empty($this->options['expose']['operator_id'])) {
- //        // exposed and locked.
- //        $which = in_array($this->operator, $this->operatorValues(2)) ? 'minmax' : 'value';
- //      }
- //      else {
- //        $source = ':input[name="' . $this->options['expose']['operator_id'] . '"]';
- //      }
- //    }
+      if (empty($this->options['expose']['use_operator']) || empty($this->options['expose']['operator_id'])) {
+        // exposed and locked.
+        $which = in_array($this->operator, $this->operatorValues(2)) ? 'minmax' : 'value';
+      }
+      else {
+        $source = ':input[name="' . $this->options['expose']['operator_id'] . '"]';
+      }
+    }
 
- //    $user_input = $form_state->getUserInput();
- //    if ($which == 'all') {
- //      $form['value']['value'] = array(
- //        '#type' => 'select',
- //        '#title' => !$exposed ? $this->t('Value') : '',
- //        '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017']
- //      );
- //      // Setup #states for all operators with one value.
- //      foreach ($this->operatorValues(1) as $operator) {
- //        $form['value']['value']['#states']['visible'][] = array(
- //          $source => array('value' => $operator),
- //        );
- //      }
- //      if ($exposed && !isset($user_input[$identifier]['value'])) {
- //        $user_input[$identifier]['value'] = $this->value['value'];
- //        $form_state->setUserInput($user_input);
- //      }
- //    }
- //    elseif ($which == 'value') {
- //      // When exposed we drop the value-value and just do value if
- //      // the operator is locked.
- //      $form['value'] = array(
- //        '#type' => 'select',
- //        '#title' => !$exposed ? $this->t('Value') : '',
- //        '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017','2018'=>'2018'],
+    $user_input = $form_state->getUserInput();
+    if ($which == 'all') {
+      $form['value']['value'] = array(
+        '#type' => 'select',
+        '#title' => !$exposed ? $this->t('Value') : '',
+        '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017']
+      );
+      // Setup #states for all operators with one value.
+      foreach ($this->operatorValues(1) as $operator) {
+        $form['value']['value']['#states']['visible'][] = array(
+          $source => array('value' => $operator),
+        );
+      }
+      if ($exposed && !isset($user_input[$identifier]['value'])) {
+        $user_input[$identifier]['value'] = $this->value['value'];
+        $form_state->setUserInput($user_input);
+      }
+    }
+    elseif ($which == 'value') {
+      // When exposed we drop the value-value and just do value if
+      // the operator is locked.
+      $form['value'] = array(
+        '#type' => 'select',
+        '#title' => !$exposed ? $this->t('Value') : '',
+        '#options'=>['2015'=>'2015','2016'=>'2016','2017'=>'2017','2018'=>'2018'],
         
- //      );
- //      if ($exposed && !isset($user_input[$identifier])) {
- //        $user_input[$identifier] = $this->value['value'];
- //        $form_state->setUserInput($user_input);
- //      }
- //    }
+      );
+      if ($exposed && !isset($user_input[$identifier])) {
+        $user_input[$identifier] = $this->value['value'];
+        $form_state->setUserInput($user_input);
+      }
+    }
 
 
-  //}
+  }
 
 	protected function enhanceBetween($field) {
 	    if ($this->operator == 'enhanceBetween') {
